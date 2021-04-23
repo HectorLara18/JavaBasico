@@ -15,7 +15,12 @@ public class TestObjeto {
         personas[2] = persona3;
 
         for (int x = 0; x < personas.length; x++) {
-            System.out.println(personas[x].getName());
+            System.out.println(x);
+            if(personas[x].getName() == null){
+                System.out.println("empty person");
+            } else {
+                System.out.println(personas[x].getName());
+            }
         }
     }
 }
