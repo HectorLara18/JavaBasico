@@ -6,6 +6,7 @@ public class TestArreglos {
         System.out.println("edades = " + edades);
 
         for (int x = 0; x < edades.length; x++) {
+            int y;
             System.out.println(edades[x]);
             edades[x] = x;
             System.out.println(edades[x]);

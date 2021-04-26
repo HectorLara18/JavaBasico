@@ -8,7 +8,7 @@ public class TestObjeto {
         Persona persona2 = new Persona("Raul Lara");
         Persona persona3 = new Persona("Jazmin Banda");
 
-        Persona personas[] = new Persona[3];
+        Persona personas[] = new Persona[4];
 
         personas[0] = persona1;
         personas[1] = persona2;
@@ -16,10 +16,10 @@ public class TestObjeto {
 
         for (int x = 0; x < personas.length; x++) {
             System.out.println(x);
-            if(personas[x].getName() == null){
-                System.out.println("empty person");
-            } else {
+            if(personas[x] != null){
                 System.out.println(personas[x].getName());
+            } else {
+                System.out.println("empty person");
             }
         }
     }
