@@ -9,6 +9,7 @@ public class Person {
     protected Date fechaIngreso;
     protected int personId;
     public static int id;
+    protected String correo;
 
     //Constructor
     public Person(String name) {
@@ -39,6 +40,15 @@ public class Person {
     public int getPersonId(){
         return this.personId;
     }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+
+    public String getCorreo(){
+        return this.correo;
+    }
+
 
     @Override
     public String toString() {
